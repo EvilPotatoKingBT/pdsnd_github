@@ -1,0 +1,5 @@
+# alternative is to use line below to include all csv files
+# *.csv
+new_york_city.csv
+chicago.csv
+washington.csv
