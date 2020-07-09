@@ -10,7 +10,7 @@ Calculate statistics and build interactive environment to analyze provided datas
 
 ### Files used
 bikeshare.py
-csv data files for these cities:
+Data files (in CSV format) are included in this project:
 	New York
 	Washington
 	Chicago
@@ -22,4 +22,3 @@ To make bikeshare work, snippets from other webpages & forum were used. Most not
    https://docs.python.org/
    https://cmdlinetips.com/
    https://codefisher.org/
-
