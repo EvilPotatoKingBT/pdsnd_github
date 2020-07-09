@@ -8,18 +8,6 @@ import timeit
 from collections import Counter
 from itertools import groupby
 
-"""
-Links to websites, books, and other resources are not attached in readme file
-Instead, these links are attached directly above or below of code used
-
-Snippets from other webpages & forum were used. Most notaly:
-   https://www.geeksforgeeks.org
-   https://stackoverflow.com/
-   https://docs.python.org/
-   https://cmdlinetips.com/
-   https://codefisher.org/
-"""
-
 my_folder = None
 
 def load_and_merge_bikeshare_data():
