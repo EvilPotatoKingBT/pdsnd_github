@@ -17,8 +17,8 @@ Data files (in CSV format) are included in this project:
 
 ### Credits
 To make bikeshare work, snippets from other webpages & forum were used. Most notably:
-   https://www.geeksforgeeks.org
-   https://stackoverflow.com/
-   https://docs.python.org/
-   https://cmdlinetips.com/
-   https://codefisher.org/
+  * https://www.geeksforgeeks.org
+  * https://stackoverflow.com/
+  * https://docs.python.org/
+  * https://cmdlinetips.com/
+  * https://codefisher.org/
