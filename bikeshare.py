@@ -61,15 +61,6 @@ def load_and_merge_bikeshare_data():
         
     data_all = data_all.reset_index()
     
-    #change unspecified gender to 'Unknown'
-    #data_all['Gender'] = data_all['Gender'].fillna('Unknown')
-    #data_all['Gender'] = data_all['Gender'].dropna()
-    
-    #change unsecified or missing 'Birth Year' to 'Unknown'
-    #this messes up later calculation. ommitted for now
-    #data_all['Birth Year'] = data_all['Birth Year'].fillna('Unknown')
-    #data_all['Birth Year'] = data_all['Birth Year'].dropna()
-    
     #add indentifier for full trips 'Start Station' + '_' + 'End Station'
     data_all['full_trip'] = data_all['Start Station'] + ' _ ' + data_all['End Station']
     
