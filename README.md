@@ -13,5 +13,10 @@ bikeshare.py
 csv data files
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+To make bikeshare work, snippets from other webpages & forum were used. Most notably:
+   https://www.geeksforgeeks.org
+   https://stackoverflow.com/
+   https://docs.python.org/
+   https://cmdlinetips.com/
+   https://codefisher.org/
 
