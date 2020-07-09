@@ -295,7 +295,6 @@ def main():
     
     #Read current folder, take all CSVs inside and merge them into one DataFrame
     data_bikeshares = load_and_merge_bikeshare_data()
-    #print(data_bikeshares) #used when troubleshooting
 
     while True:
         #Get inputs:
@@ -309,7 +308,6 @@ def main():
         
         #Apply filters to merged data
         bikeshares_filtered = apply_filters(data_bikeshares, city, month, weekday)       
-        #print(bikeshares_filtered)  #used when troubleshooting
         
         #Return values for filtered data
         display_outputs(bikeshares_filtered, city, month, weekday)
