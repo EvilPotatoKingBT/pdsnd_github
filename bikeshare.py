@@ -8,18 +8,6 @@ import timeit
 from collections import Counter
 from itertools import groupby
 
-"""
-Links to websites, books, and other resources are not attached in readme file
-Instead, these links are attached directly above or below of code used
-
-Snippets from other webpages & forum were used. Most notaly:
-   https://www.geeksforgeeks.org
-   https://stackoverflow.com/
-   https://docs.python.org/
-   https://cmdlinetips.com/
-   https://codefisher.org/
-"""
-
 my_folder = None
 
 def load_and_merge_bikeshare_data():
@@ -72,15 +60,6 @@ def load_and_merge_bikeshare_data():
         data_all = data_all.append(tmp, sort=False)
         
     data_all = data_all.reset_index()
-    
-    #change unspecified gender to 'Unknown'
-    #data_all['Gender'] = data_all['Gender'].fillna('Unknown')
-    #data_all['Gender'] = data_all['Gender'].dropna()
-    
-    #change unsecified or missing 'Birth Year' to 'Unknown'
-    #this messes up later calculation. ommitted for now
-    #data_all['Birth Year'] = data_all['Birth Year'].fillna('Unknown')
-    #data_all['Birth Year'] = data_all['Birth Year'].dropna()
     
     #add indentifier for full trips 'Start Station' + '_' + 'End Station'
     data_all['full_trip'] = data_all['Start Station'] + ' _ ' + data_all['End Station']
@@ -316,7 +295,6 @@ def main():
     
     #Read current folder, take all CSVs inside and merge them into one DataFrame
     data_bikeshares = load_and_merge_bikeshare_data()
-    #print(data_bikeshares) #used when troubleshooting
 
     while True:
         #Get inputs:
@@ -330,7 +308,6 @@ def main():
         
         #Apply filters to merged data
         bikeshares_filtered = apply_filters(data_bikeshares, city, month, weekday)       
-        #print(bikeshares_filtered)  #used when troubleshooting
         
         #Return values for filtered data
         display_outputs(bikeshares_filtered, city, month, weekday)
